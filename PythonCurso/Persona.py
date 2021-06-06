@@ -13,3 +13,16 @@ class clasePersona:
 
         for row in cursor:
             print(row)
+
+    def Insertar(self):
+        conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+                      'Server=.;'
+                      'Database=CursoPython;'
+                      'UID=sa;'
+                      'PWD=sql')
+        
+        cursor = conn.cursor()
+        cursor.execute('Insert into Persona(Nombre,Pais) Values(?,?)')
+
+        for row in cursor:
+            print(row)
