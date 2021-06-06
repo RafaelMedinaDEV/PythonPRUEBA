@@ -20,9 +20,17 @@ class clasePersona:
                       'Database=CursoPython;'
                       'UID=sa;'
                       'PWD=sql')
+        nombre=input('Ingrese nombre: ')
+        pais=input('Ingrese pais: ')
         
+        query="Insert into Persona(Nombre,Pais) Values(?,?)"
         cursor = conn.cursor()
-        cursor.execute('Insert into Persona(Nombre,Pais) Values(?,?)')
+
+        cursor.execute(query, [nombre,pais])
+        conn.commit()
+        print('Guardado Exitosamente')
+        conn.close()
+        
 
         for row in cursor:
             print(row)
