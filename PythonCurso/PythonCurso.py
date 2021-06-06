@@ -9,5 +9,5 @@ if op == "1":
     oPersona = Persona.clasePersona()
     oPersona.Obtener()
 else:
-    print("Opcion invalida")
+    print("Opcion no es correcta")
 
