@@ -12,9 +12,6 @@ op = input("Selecciona una opcion: ")
 if op == "1":
     oPersona = Persona.clasePersona()
     oPersona.Obtener()
-if op == "2":
-    oPersona = Persona.clasePersona()
-    oPersona.Insertar()
 else:
     print("Opcion no es correcta")
 
