@@ -2,7 +2,7 @@
 import pyodbc
 import Persona
 
-print("PYTHON CRUD")
+print("CRUD")
 print("1. Listar")
 print("2. Insertar")
 print("3. Actualizar")
